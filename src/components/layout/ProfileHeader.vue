@@ -45,13 +45,13 @@ const onLogout = async () => {
         <v-avatar
           v-if="authStore.userData.image_url"
           :image="authStore.userData.image_url"
-          color="orange-darken-3"
+          color="grey-lighten-3"
           size="large"
         >
         </v-avatar>
 
-        <v-avatar v-else color="orange-darken-3" size="large">
-          <span class="text-h5">
+        <v-avatar v-else color="grey-lighten-3" size="large">
+          <span class="text-h5 text-red-darken-2">
             {{ getAvatarText(authStore.userData.firstname + ' ' + authStore.userData.lastname) }}
           </span>
         </v-avatar>
@@ -64,18 +64,19 @@ const onLogout = async () => {
           <v-list-item
             :subtitle="authStore.userData.email"
             :title="authStore.userData.firstname + ' ' + authStore.userData.lastname"
+            title-class="red--text text--darken-2"
           >
             <template #prepend>
               <v-avatar
                 v-if="authStore.userData.image_url"
                 :image="authStore.userData.image_url"
-                color="orange-darken-3"
+                color="grey-lighten-3"
                 size="large"
               >
               </v-avatar>
 
-              <v-avatar v-else color="orange-darken-3" size="large">
-                <span class="text-h5">
+              <v-avatar v-else color="grey-lighten-3" size="large">
+                <span class="text-h5 text-red-darken-2">
                   {{
                     getAvatarText(authStore.userData.firstname + ' ' + authStore.userData.lastname)
                   }}
@@ -87,13 +88,14 @@ const onLogout = async () => {
 
         <v-divider class="my-3"></v-divider>
 
-        <v-btn prepend-icon="mdi-wrench" variant="plain"> Rental History </v-btn>
+        <v-btn prepend-icon="mdi-wrench" variant="plain" class="text-red-darken-2"> Rental History </v-btn>
 
         <v-divider class="my-3"></v-divider>
 
         <v-btn
           prepend-icon="mdi-logout"
           variant="plain"
+          class="red--text text--darken-2"
           @click="onLogout"
           :loading="formAction.formProcess"
           :disabled="formAction.formProcess"
