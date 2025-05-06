@@ -1,6 +1,6 @@
 <script setup>
 import AppLayout from '@/components/layout/AppLayout.vue'
-import LoginForm from '@/components/forms/LoginForm.vue'
+import LoginForm from '@/components/auth/LoginForm.vue'
 import { RouterLink } from 'vue-router'
 </script>
 
@@ -8,8 +8,8 @@ import { RouterLink } from 'vue-router'
   <AppLayout>
     <template #content>
       <v-row align="center" justify="center">
-        <v-col cols="12" mx="auto" sm="8" md="6" lg="4" class="mt-10">
-          <v-card class="mx-auto" max-width="400" elevation="20">
+        <v-col cols="12" mx="auto" sm="8" md="8" lg="4" class="mt-10">
+          <v-card class="mx-auto" max-width="500" elevation="20">
             <v-card-title>
               <div class="text-center">
                 <img

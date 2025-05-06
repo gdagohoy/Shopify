@@ -1,6 +1,6 @@
 <script setup>
 import AppLayout from '@/components/layout/AppLayout.vue'
-import RegisterForm from '@/components/forms/RegisterForm.vue'
+import RegisterForm from '@/components/auth/RegisterForm.vue'
 import { RouterLink } from 'vue-router'
 </script>
 
