@@ -31,6 +31,8 @@ const onSubmit = async () => {
     password: formData.value.password,
   })
 
+  console.log({ data, error })
+
   if (error) {
     // Add Error Message and Status Code
     formAction.value.formErrorMessage = error.message
@@ -84,6 +86,7 @@ const onFormSubmit = () => {
       </v-col>
     </v-row>
     <v-btn
+      type="submit"
       color="red-darken-2"
       block
       class="mt-4"
