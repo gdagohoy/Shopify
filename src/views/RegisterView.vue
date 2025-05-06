@@ -9,7 +9,7 @@ import { RouterLink } from 'vue-router'
     <template #content>
       <v-row align="center" justify="end">
         <v-col cols="12" sm="8" md="6" lg="4" class="mt-10">
-          <v-card class="mx-auto" max-width="400" elevation="20">
+          <v-card class="mx-auto" max-width="500" elevation="20">
             <v-card-title>
               <div class="text-center">
                 <img
